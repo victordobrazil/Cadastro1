@@ -38,23 +38,21 @@ public class Formulario extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTNome.setText("jTextField1");
+        jTNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTNomeActionPerformed(evt);
+            }
+        });
 
-        jTDescricao.setText("jTextField2");
+        jLabel1.setText("Nome:");
 
-        jTQuantidade.setText("jTextField3");
+        jLabel2.setText("Descricao:");
 
-        jLabel1.setText("Nome");
+        jLabel3.setText("Quantidade:");
 
-        jLabel2.setText("Descricao");
+        jLabel4.setText("Preco:");
 
-        jLabel3.setText("Quantidade");
-
-        jTPreco.setText("jTextField4");
-
-        jLabel4.setText("Preco");
-
-        jBCadastrar.setText("jButton1");
+        jBCadastrar.setText("Cadastrar");
         jBCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBCadastrarActionPerformed(evt);
@@ -77,7 +75,7 @@ public class Formulario extends javax.swing.JFrame {
                             .addComponent(jLabel2)
                             .addComponent(jLabel3)
                             .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTPreco, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
                             .addComponent(jTNome)
@@ -122,6 +120,10 @@ public class Formulario extends javax.swing.JFrame {
         Cadastrado i = new Cadastrado(b);
         i.setVisible(true);
     }//GEN-LAST:event_jBCadastrarActionPerformed
+
+    private void jTNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTNomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTNomeActionPerformed
 
     /**
      * @param args the command line arguments

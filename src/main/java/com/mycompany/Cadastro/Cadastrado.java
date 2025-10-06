@@ -19,6 +19,9 @@ public class Cadastrado extends javax.swing.JFrame {
     public Cadastrado(Produto p){
         initComponents();
         jLNome.setText(String.valueOf(p.getNome()));
+        jLPreco.setText(String.valueOf(p.getPreco()));
+        jLQuantidade.setText(String.valueOf(p.getQuantidade()));
+        jLDescricao.setText(String.valueOf(p.getDescricao()));
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -36,26 +39,27 @@ public class Cadastrado extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLNome.setText("jLabel1");
+        jLNome.setText("Nome");
 
-        jLDescricao.setText("jLabel2");
+        jLDescricao.setText("Descrição");
 
-        jLQuantidade.setText("jLabel3");
+        jLQuantidade.setText("Quantidade");
 
-        jLPreco.setText("jLabel4");
+        jLPreco.setText("Preço");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(161, 161, 161)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLPreco)
+                .addGap(172, 172, 172)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLQuantidade)
-                    .addComponent(jLDescricao)
-                    .addComponent(jLNome))
-                .addContainerGap(202, Short.MAX_VALUE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLPreco)
+                        .addComponent(jLDescricao)
+                        .addComponent(jLNome)))
+                .addContainerGap(166, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -64,9 +68,9 @@ public class Cadastrado extends javax.swing.JFrame {
                 .addComponent(jLNome)
                 .addGap(18, 18, 18)
                 .addComponent(jLDescricao)
-                .addGap(36, 36, 36)
+                .addGap(35, 35, 35)
                 .addComponent(jLQuantidade)
-                .addGap(36, 36, 36)
+                .addGap(37, 37, 37)
                 .addComponent(jLPreco)
                 .addContainerGap(109, Short.MAX_VALUE))
         );
